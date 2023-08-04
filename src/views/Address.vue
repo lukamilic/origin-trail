@@ -165,7 +165,6 @@ export default {
             process.env.VUE_APP_API_KEY
         )
         this.normalTransactions = response.data.result
-        console.log(this.normalTransactions);
     },
     async getInternalTransactions(page) {
       let response = await axios.get(
